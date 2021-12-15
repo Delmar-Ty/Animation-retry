@@ -1,0 +1,59 @@
+/*Hi*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(#494E6B, #985E6D);
+    position: relative;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 35vw;
+    height: 35vw;
+    background-color: #192231;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all;
+    transition-duration: 1s;
+    color: #98878F;
+    font-size: 0rem;
+    text-align: center;
+}
+
+.container:hover {
+    font-size: 1rem;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    line-height: 3rem;
+    overflow: hidden;
+}
+
+.child {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../Media/prof-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition: all;
+    transition-duration: 1s;
+}
+
+.container:hover>.child {
+    transform: translate(46.5%) scale(40%);
+    border-radius: 50%;
+} 
